@@ -1,5 +1,5 @@
 {
-  "name":              "dreamfactory/dreamfactory",
+  "name":              "a15lam/dreamfactory",
   "description":       "The DreamFactory(tm) Platform.",
   "keywords":          [
     "api",
@@ -43,7 +43,6 @@
     "dreamfactory/df-api-docs-ui":     "~1.2.0",
     "dreamfactory/df-apidoc":          "~0.6.1",
     "dreamfactory/df-aws":             "~0.15.1",
-    "dreamfactory/df-azure":           "~0.15.1",
     "dreamfactory/df-cache":           "~0.11.0",
     "dreamfactory/df-core":            "~0.14.2",
     "dreamfactory/df-email":           "~0.8.0",
