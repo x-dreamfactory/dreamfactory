@@ -36,6 +36,10 @@
     {
       "type": "vcs",
       "url": "https://gitlab.com/peach-tech/chef.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/x-dreamfactory/df-user.git"
     }
   ],
   "require":           {
@@ -54,7 +58,7 @@
     "dreamfactory/df-script":          "~0.8.2",
     "dreamfactory/df-sqldb":           "~0.15.2",
     "dreamfactory/df-system":          "~0.1.0",
-    "dreamfactory/df-user":            "~0.14.0",
+    "dreamfactory/df-user":            "dev-role_access_fix",
     "peach-tech/chef":                 "dev-master",
     "predis/predis":                   "~1.0",
     "fideloper/proxy":                 "~3.3",

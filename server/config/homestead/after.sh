@@ -88,25 +88,25 @@ echo ">>> Installing phpMyAdmin (http://host/pma)"
 cd */.
 composer create-project phpmyadmin/phpmyadmin --repository-url=https://www.phpmyadmin.net/packages.json --no-dev public/pma > $OUTPUT 2>&1
 
-echo ">>> Installing bower"
-sudo npm install -g bower > $OUTPUT 2>&1
-echo ">>> Installing grunt-cli"
-sudo npm install -g grunt-cli > $OUTPUT 2>&1
+# echo ">>> Installing bower"
+# sudo npm install -g bower > $OUTPUT 2>&1
+# echo ">>> Installing grunt-cli"
+# sudo npm install -g grunt-cli > $OUTPUT 2>&1
 
-echo ">>> Setting up workbench for some packages";
-mkdir -p workbench/repos > $OUTPUT 2>&1
-cd workbench/repos
-echo ">>> ----> Cloning df-admin-app";
-git clone -b develop https://github.com/dreamfactorysoftware/df-admin-app.git > $OUTPUT 2>&1
-echo ">>> ----> Cloning df-api-docs-ui";
-git clone -b develop https://github.com/dreamfactorysoftware/df-api-docs-ui.git > $OUTPUT 2>&1
-echo ">>> ----> Cloning df-filemanager-app";
-git clone -b develop https://github.com/dreamfactorysoftware/df-filemanager-app.git > $OUTPUT 2>&1
-cd ../../public
-ln -s ../workbench/repos/df-api-docs-ui dev-df-api-docs-ui > $OUTPUT 2>&1
-ln -s ../workbench/repos/df-admin-app dev-df-admin-app > $OUTPUT 2>&1
-ln -s ../workbench/repos/df-filemanager-app dev-df-filemanager-app > $OUTPUT 2>&1
-cd ../
+# echo ">>> Setting up workbench for some packages";
+# mkdir -p workbench/repos > $OUTPUT 2>&1
+# cd workbench/repos
+# echo ">>> ----> Cloning df-admin-app";
+# git clone -b develop https://github.com/dreamfactorysoftware/df-admin-app.git > $OUTPUT 2>&1
+# echo ">>> ----> Cloning df-api-docs-ui";
+# git clone -b develop https://github.com/dreamfactorysoftware/df-api-docs-ui.git > $OUTPUT 2>&1
+# echo ">>> ----> Cloning df-filemanager-app";
+# git clone -b develop https://github.com/dreamfactorysoftware/df-filemanager-app.git > $OUTPUT 2>&1
+# cd ../../public
+# ln -s ../workbench/repos/df-api-docs-ui dev-df-api-docs-ui > $OUTPUT 2>&1
+# ln -s ../workbench/repos/df-admin-app dev-df-admin-app > $OUTPUT 2>&1
+# ln -s ../workbench/repos/df-filemanager-app dev-df-filemanager-app > $OUTPUT 2>&1
+# cd ../
 
 echo ">>> Installing workbench git tools"
 cp server/config/homestead/tools/*.php workbench/repos/
